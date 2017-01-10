@@ -14,7 +14,7 @@ class Restaurant(models.Model):
     street   = models.CharField(max_length = 20, default = 'Main St')    # Street name
     zipcode  = models.IntegerField(default = 0)                          # Zip code
     phone    = models.BigIntegerField(default = 0)                       # Phone number
-    cuisine  = models.CharField(max_length = 50, default = 'American')   # Cuisine description
+    cuisine  = models.CharField(max_length = 100, default = 'American')  # Cuisine description
 
     def __str__(self):
         return self.name
@@ -33,7 +33,7 @@ class InspectionResults(models.Model):
     # Inspection information
     inspection_type = models.CharField(max_length = 100, default = '') # Type of inspection
     inspection_date = models.DateField(default = timezone.now)         # Inspection date
-    grade           = models.CharField(max_length = 20, default = '')  # Inspection grade (A, B, etc.)
+    grade           = models.CharField(max_length = 50, default = '')  # Inspection grade (A, B, etc.)
     score           = models.IntegerField(default = 0)                 # Inspection score
     grade_date      = models.DateField(default = timezone.now)         # Grade date
 
