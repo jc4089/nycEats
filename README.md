@@ -8,6 +8,6 @@ To install the package, download the source code, start a virtual environment, a
 
 # Heroku
 
-The source code and data were deployed on Heroku and can be accessed from https://salty-taiga-77303.herokuapp.com/admin/inspection.
+The source code and data were deployed on Heroku and can be accessed from https://salty-taiga-77303.herokuapp.com/inspection.
 
 Enjoy!
