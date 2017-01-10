@@ -16,7 +16,7 @@ class Command(BaseCommand):
         # Load file into table
         for i in range(len(data)):
             if i % 1000 == 0:
-                print 'Processed %d records' % i
+                print('Processed %d records' % i)
             
             # Parse parameters
             camis = data.CAMIS[i]
