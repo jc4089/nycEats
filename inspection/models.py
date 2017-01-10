@@ -9,9 +9,9 @@ class Restaurant(models.Model):
     # Restaurant information
     camis    = models.IntegerField(unique = True, default = 1)           # Restaurant ID
     name     = models.CharField(max_length = 50, default = 'Restaurant') # Restaurant name
-    boro     = models.CharField(max_length = 20, default = 'Manhattan')  # Borough
-    building = models.CharField(max_length = 10, default = '0')          # Building number (can contain hypen)
-    street   = models.CharField(max_length = 20, default = 'Main St')    # Street name
+    boro     = models.CharField(max_length = 50, default = 'Manhattan')  # Borough
+    building = models.CharField(max_length = 50, default = '0')          # Building number (can contain hypen)
+    street   = models.CharField(max_length = 50, default = 'Main St')    # Street name
     zipcode  = models.IntegerField(default = 0)                          # Zip code
     phone    = models.BigIntegerField(default = 0)                       # Phone number
     cuisine  = models.CharField(max_length = 100, default = 'American')  # Cuisine description
