@@ -1,0 +1,12 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'inspection/style.css' %}" />
+<h1> Recommended Restaurants </h1>
+{% if recommended_restaurants %}
+    <ul>
+    {% for inspection in recommended_restaurants %}
+        <li><a href="{% url 'detail' inspection.id %}">{{ inspection.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Can't find restaurants</p>
+{% endif %}
