@@ -32,7 +32,7 @@ class InspectionResults(models.Model):
     
     # Inspection information
     inspection_type = models.CharField(max_length = 100, default = '') # Type of inspection
-    inspection_date = models.DateField(default = timezone.now())       # Inspection date
+    inspection_date = models.DateField(default = timezone.now)         # Inspection date
     grade           = models.CharField(max_length = 20, default = '')  # Inspection grade (A, B, etc.)
     score           = models.IntegerField(default = 0)                 # Inspection score
     grade_date      = models.DateField(default = timezone.now)         # Grade date
