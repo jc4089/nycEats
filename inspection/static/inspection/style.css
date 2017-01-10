@@ -1,7 +1,6 @@
-li a {
-    color: green;
-}
-
-body {
-    background: white url("images/thai.jpg") no-repeat right bottom;
+body{
+    background-image:url('images/thai.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
