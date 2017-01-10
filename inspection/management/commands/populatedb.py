@@ -54,7 +54,6 @@ class Command(BaseCommand):
                 gyear = 1970
             
             # Create restaurant
-            print(camis, name, boro, building, street, zipcode, phone, cuisine)
             newRestaurant, _ = Restaurant.objects.get_or_create(
                 camis = camis,
                 name = name,
