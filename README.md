@@ -2,9 +2,9 @@
 
 A Django package that loads restaurant inspection data from NYC Open Data into a databse and displays the results on the web.
 
-To install the package, download the source code, start a virtual environment, and run
+After downloading the source code, make sure to download the various package requirements by starting a virtual environment and running
 
-`pip install -r requirements`
+`pip install -r requirements.txt`
 
 # Heroku
 
